@@ -15,7 +15,7 @@ export default function Home() {
   const handleDiagnosisComplete = (answers: string[]) => {
     const result = getDiagnosisFromSymptoms(answers);
     if (result) {
-      setDiagnosis(result);
+      setDiagnosis(result as Diagnosis);
     }
   };
 

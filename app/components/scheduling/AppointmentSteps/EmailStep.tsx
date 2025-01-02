@@ -13,9 +13,7 @@ export default function EmailStep({ email, onEmailChange }: Props) {
     <div className="space-y-4">
       <div className="flex items-center space-x-2">
         <Mail className="w-6 h-6" />
-        <Typography variant="h6">
-          Ingresa tu correo
-        </Typography>
+        <Typography variant="h6">Ingresa tu correo</Typography>
       </div>
       <Input
         type="email"
@@ -26,6 +24,7 @@ export default function EmailStep({ email, onEmailChange }: Props) {
         labelProps={{
           className: "before:content-none after:content-none",
         }}
+        crossOrigin={undefined}
       />
     </div>
   );
