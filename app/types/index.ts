@@ -1,25 +1,30 @@
-export interface Patient {
-  rut: string;
+export interface Doctor {
+  id: string;
   name: string;
-  birthDate: string;
+  specialty: string;
+  image: string;
+  isOnline: boolean;
+  isInPerson: boolean;
+  rating: number;
 }
+
+export interface AppointmentFormData {
+  email: string;
+  date: Date | undefined;
+  time: string;
+  doctorId: string;
+}
+
+export type PaymentOption = "now" | "later";
 
 export interface Symptom {
   id: string;
-  text: string;
-  options: string[];
-  followUpQuestions?: {
-    [key: string]: Symptom;
-  };
+  name: string;
+  severity: "mild" | "moderate" | "severe";
 }
 
-export interface Diagnosis {
-  condition: string;
-  recommendations: string[];
-  severity: 'low' | 'medium' | 'high';
-  urgency: {
-    isUrgent: boolean;
-    message: string;
-  };
-  canScheduleOnline: boolean;
+export interface SymptomCheckerResult {
+  recommendedSpecialty: string;
+  urgency: "normal" | "urgent" | "emergency";
+  message: string;
 }

@@ -1,6 +1,10 @@
 {
   "/_not-found": "app/_not-found.js",
   "/page": "app/page.js",
-  "/consultation/page": "app/consultation/page.js",
-  "/scheduling/page": "app/scheduling/page.js"
+  "/confirmacion/page": "app/confirmacion/page.js",
+  "/consulta/page": "app/consulta/page.js",
+  "/doctores/page": "app/doctores/page.js",
+  "/pago/page": "app/pago/page.js",
+  "/resumen/page": "app/resumen/page.js",
+  "/sintomas/[id]/page": "app/sintomas/[id]/page.js"
 }

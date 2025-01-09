@@ -1,6 +1,10 @@
 {
   "/_not-found": "/_not-found",
   "/page": "/",
-  "/consultation/page": "/consultation",
-  "/scheduling/page": "/scheduling"
+  "/confirmacion/page": "/confirmacion",
+  "/consulta/page": "/consulta",
+  "/doctores/page": "/doctores",
+  "/pago/page": "/pago",
+  "/resumen/page": "/resumen",
+  "/sintomas/[id]/page": "/sintomas/[id]"
 }
